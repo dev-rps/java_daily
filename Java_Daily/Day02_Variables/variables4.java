@@ -1,6 +1,6 @@
 package Java_Daily.Day02_Variables;
 
-public class variable4 {
+public class variables4 {
     public static void main(String[] args) {
         //good ones
         int secondstoLaunch = 10;
@@ -9,7 +9,7 @@ public class variable4 {
         // int s = 60; // Bad: Too short, what is 's'?
         //String rM; // Bad: confusing abbreviation
         // String STUFF = "ID"; // Bad: All caps is usually for constants, not variables.
-        System.out.println("\nthe rocket " + rocketName + " will launch in" + secondstoLaunch + " with fuel" + fuelAmount);
+        System.out.println("\nThe rocket " + rocketName + " will launch in " + secondstoLaunch + " seconds with fuel " + fuelAmount + " Litres.");
 
     }
     

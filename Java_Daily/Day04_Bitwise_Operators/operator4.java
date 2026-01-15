@@ -2,36 +2,50 @@ package Java_Daily.Day04_Bitwise_Operators;
 
 public class operator4 {
     public static void main(String[] args) {
-        // 1. Defining permission using powers of 2
-        int READ    = 1;  // Binary: 0001
-        int WRITE   = 2;  // Binary: 0010
-        int EXECUTE = 4;  // Binary: 0100
-        int DELETE  = 8;  // Binary: 1000
+        // 1. SETTING THE STAGE (Powers of 2)
+        // Each number represents a unique "bit" position.
+        int READ    = 1;  // 0001
+        int WRITE   = 2;  // 0010
+        int EXECUTE = 4;  // 0100
+        int DELETE  = 8;  // 1000
 
-        // 2. Initializing a user with ZERO permissions
-        int userPermissions = 0; // Binary: 0000
+        // 2. CREATING A USER (Initially has no access)
+        int userPermissions = 0; // 0000
 
-        // 3. Adding READ and WRITE permissions using OR
-        // OR "turns on" the bits if they aren't already on.
-        userPermissions = userPermissions | READ | WRITE;
-
-        System.out.println("User Permissions (Decimal): " + userPermissions);
-        System.out.println("User Permissions (Binary):  " + Integer.toBinaryString(userPermissions));
-
-        // 4. Checking if user has WRITE permission using AND
-        // If (result & WRITE) is non-zero, the bit is "on".
-        boolean canWrite = (userPermissions & WRITE) != 0;
-        System.out.println("Can user write? " + canWrite);
-
-        // 5. Checking if user has DELETE permission
-        boolean canDelete = (userPermissions & DELETE) != 0;
-        System.out.println("Can user delete? " + canDelete);
-
-        // 6. Removing WRITE permission using XOR 
-        // XOR "toggles" the bit (if it's 1, it becomes 0).
-        userPermissions = userPermissions ^ WRITE;
+        // 3. GRANTING ACCESS (The OR | Operator)
+        // We stamp the READ and WRITE bits onto the user.
+        userPermissions = userPermissions | READ | WRITE; 
         
-        System.out.println("After removing WRITE (Binary): " + Integer.toBinaryString(userPermissions));
+        System.out.println("Current Binary: " + Integer.toBinaryString(userPermissions)); // 0011
+
+        // 4. THE SECURITY CHECK (The AND & Operator)
+        // This is how print human readable words based on bits.
+        
+        System.out.println("\n--- Security Clearance Check ---");
+        
+        // Check for READ
+        if ((userPermissions & READ) != 0) {
+            System.out.println("✅ Access Granted: You can read this file.");
+        } else {
+            System.out.println("❌ Access Denied: Read permission required.");
+        }
+
+        // Check for DELETE
+        if ((userPermissions & DELETE) != 0) {
+            System.out.println("✅ Access Granted: You can delete this file.");
+        } else {
+            System.out.println("❌ Access Denied: You do not have Delete authority.");
+        }
+
+        // 5. REVOKING ACCESS (The XOR Operator)
+        // Lets toggle the WRITE permission off.
+        System.out.println("\n[System Update: Revoking Write Access...]");
+        userPermissions = userPermissions ^ WRITE; 
+
+        // 6. FINAL STATUS
+        boolean canWriteNow = (userPermissions & WRITE) != 0;
+        System.out.println("Can the user write now? " + (canWriteNow ? "Yes" : "No"));
+        System.out.println("Final Binary State: " + Integer.toBinaryString(userPermissions));
     }
     
 }

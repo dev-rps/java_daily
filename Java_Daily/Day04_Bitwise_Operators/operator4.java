@@ -25,16 +25,16 @@ public class operator4 {
         
         // Check for READ
         if ((userPermissions & READ) != 0) {
-            System.out.println("✅ Access Granted: You can read this file.");
+            System.out.println("Access Granted: You can read this file.");
         } else {
-            System.out.println("❌ Access Denied: Read permission required.");
+            System.out.println("Access Denied: Read permission required.");
         }
 
         // Check for DELETE
         if ((userPermissions & DELETE) != 0) {
-            System.out.println("✅ Access Granted: You can delete this file.");
+            System.out.println("Access Granted: You can delete this file.");
         } else {
-            System.out.println("❌ Access Denied: You do not have Delete authority.");
+            System.out.println("Access Denied: You do not have Delete authority.");
         }
 
         // 5. REVOKING ACCESS (The XOR Operator)

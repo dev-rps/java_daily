@@ -11,23 +11,20 @@ public class loops4 {
         int luckyNum = read.nextInt();
         for (int i = 1; i <= 10; i++) {
             
-            // 1. The SKIP logic (continue)
             if (i == unluckyNum) {
                 System.out.println(" Skipping number " + unluckyNum + "...");
                 continue; 
             }
 
-            // 2. The STOP logic (break)
             if (i == luckyNum) {
                 System.out.println(" Found number " + luckyNum + "! Stopping loop completely.");
                 break; 
             }
 
-            // 3. The normal action
             System.out.println("Processing number: " + i);
         }
 
-        System.out.println("--- Loop Finished ---");
+        System.out.println("- Loop Finished -");
 
         
     }

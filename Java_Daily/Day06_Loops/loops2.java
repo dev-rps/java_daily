@@ -10,7 +10,7 @@ public class loops2 {
         int attempts = 3;
         boolean loggedIn = false;
 
-        System.out.println("--- SECURE LOGIN SYSTEM ---");
+        System.out.println("- SECURE LOGIN SYSTEM -");
 
         while (attempts > 0 && !loggedIn) {
             System.out.println("\nAttempts remaining: " + attempts);

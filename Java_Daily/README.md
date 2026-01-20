@@ -10,6 +10,8 @@ This repository contains my daily Java learning and practice.
 - Day05_Conditionals → Decision-making, logical operators, and modern switch
 - Day06_Loops → For, while, do-while loops and flow control
 - Day07_Stack_vs_Heap → Java memory model, stack frames, heap objects, and errors
+- Day08_Methods_PassByValue → Method calls, parameter passing, and Java memory behavior
+
 
 
 

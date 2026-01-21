@@ -4,7 +4,7 @@ public class methods5 {
     public static void main(String[] args) {
         
         // ==========================================================
-        // 🌟 THE GOLDEN RULE: Java is ALWAYS "Pass-by-Value"
+        // THE GOLDEN RULE: Java is ALWAYS "Pass-by-Value"
         // ==========================================================
         // This means Java ALWAYS copies the variable before passing it.
         // It never passes the actual "container," only the contents.
@@ -53,7 +53,7 @@ public class methods5 {
     
 }
 // ==========================================================
-// 🚩 COMMON INTERVIEW MYTH
+//  COMMON INTERVIEW MYTH
 // ==========================================================
 // MYTH: "Primitives are pass-by-value, Objects are pass-by-reference."
 // FACT: NO. Objects are "Pass-by-Reference-Value."

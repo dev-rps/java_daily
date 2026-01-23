@@ -18,5 +18,5 @@ public class memory1 {
     //at the end it crashes with StackOverflowError
     // because each for each frame a container in ram is created to store variables
     // and after a certain limit the memory is full and it crashes
-    
+// main method always remained unclosed because recursions never ended   
 }

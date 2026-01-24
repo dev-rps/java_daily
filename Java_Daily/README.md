@@ -13,6 +13,7 @@ This repository contains my daily Java learning and practice.
 - Day08_Methods_PassByValue → Method calls, parameter passing, and Java memory behavior
 - Day09_Arrays_1D → Array basics, traversal, and memory behavior
 - Day10_Memory_Visualizer → Stack frames, recursion, and StackOverflow behavior
+- Day11_ArrayList → Dynamic lists, resizing behavior, and practical usage
 
 
 

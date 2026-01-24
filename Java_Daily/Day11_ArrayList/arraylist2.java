@@ -3,32 +3,22 @@ import java.util.ArrayList;
 
 public class arraylist2 {
     public static void main(String[] args) {
-        // Create an ArrayList of Integers
-        ArrayList<Integer> numbers = new ArrayList<>();
-
-        // Add elements to the ArrayList
-        numbers.add(10);
-        numbers.add(20);
-        numbers.add(30);
-        numbers.add(40);
-        numbers.add(50);
-
-        // Print the original ArrayList
-        System.out.println("Original ArrayList: " + numbers);
-
-        // Remove an element by index (e.g., remove the element at index 2)
-        int removedElement = numbers.remove(2);
-        System.out.println("Removed element at index 2: " + removedElement);
-
-        // Print the ArrayList after removal
-        System.out.println("ArrayList after removal: " + numbers);
-
-        // Update an element at a specific index (e.g., update index 1 to 25)
-        numbers.set(1, 25);
-        System.out.println("Updated element at index 1 to 25.");
-
-        // Print the final ArrayList
-        System.out.println("Final ArrayList: " + numbers);
+        // creating 
+        ArrayList<String> names = new ArrayList<>();
+        // adding elements
+        names.add("Sandip");
+        names.add("Rudra");
+        names.add("Ankit");
+        System.out.println("After adding 3 elements array size: " + names.size());
+        // accessing elements
+        System.out.println("Element at index 1: " + names.get(1));
+        System.out.println("Removing element at index 0: " + names.get(0));
+        names.remove(0);
+        System.out.println("After removing element at index 0,");
+        System.out.println("Array size: " + names.size());
+        System.out.println("Array elements: " + names);
+        // Rudra was at index 1, now should be at index 0
+        System.out.println("Element at index 0: " + names.get(0));
     }   
     
 }

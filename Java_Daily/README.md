@@ -15,6 +15,8 @@ This repository contains my daily Java learning and practice.
 - Day10_Memory_Visualizer → Stack frames, recursion, and StackOverflow behavior
 - Day11_ArrayList → Dynamic lists, resizing behavior, and practical usage
 - Day12_String_vs_StringBuilder → Immutability, performance, and memory-efficient string handling
+- Day13_2D_Arrays → Matrix structures, nested loops, and safe traversal
+
 
 
 

@@ -17,6 +17,8 @@ This repository contains my daily Java learning and practice.
 - Day12_String_vs_StringBuilder → Immutability, performance, and memory-efficient string handling
 - Day13_2D_Arrays → Matrix structures, nested loops, and safe traversal
 - Day14_Wrapper_Classes → Autoboxing, unboxing, and primitive–object trade-offs
+- Day15_Two_Sum_Brute_Force → Baseline problem-solving using nested loops
+
 
 
 
